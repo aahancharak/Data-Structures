@@ -1,4 +1,4 @@
-# Data-Structures-Assignment
+# Data-Structures-Repository
 
 ### Public repository for data structures and the assignments completed in the course.
 
