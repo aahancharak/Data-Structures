@@ -9,4 +9,6 @@ Personal repository for data structures and the assignments completed in the cou
 
 -And finally you will see a .c extension file inside ,which contains the source code.
 
+#### This was created in visual studio so if you want to contribute it will be advisable to use visual studio 
+
 ##### Happy coding✌
