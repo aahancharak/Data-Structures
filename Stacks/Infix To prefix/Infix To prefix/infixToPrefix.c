@@ -30,7 +30,7 @@ char pop() {
 	}
 }
 int isOperator(char ele) {
-	if (ele == "^" || ele == "/" || ele == "*" || ele == "+" || ele == "-") {
+	if (ele == '^' || ele == '/' || ele == '*' || ele == '+' || ele == '-') {
 		return 1;
 	}
 	else {
@@ -39,13 +39,13 @@ int isOperator(char ele) {
  }
 
 int priority(char op) {
-	if (op == "^") {
+	if (op == '^') {
 		return 3;
 	}
-	else if (op == "/" || op == "*") {
+	else if (op == '/'|| op == '*') {
 		return 2;
 	}
-	else if (op == "+" || op == "-") {
+	else if (op == '+' || op == '-') {
 		return 1;
 	}
 	else {
@@ -58,12 +58,12 @@ void infixToPrefix(char infixExp[], char prefixExp[]) {
 	int i=0, j = 0;
 	char item;
 	strrev(prefixExp);
-	push(")");
+	push(')');
 	strcat(infixExp, "(");
 	item = infixExp[i];
 	char x;
-	while (item != "\0") {
-		if (item == ")") {
+	while (item != '\0') {
+		if (item == ')') {
 			push(item);
 		}
 		else if (isdigit(item) || isalpha(item)) {
@@ -80,9 +80,9 @@ void infixToPrefix(char infixExp[], char prefixExp[]) {
 			push(x);
 			push(item);
 		}
-		else if (item == "(") {
+		else if (item == '(') {
 			x = pop();
-			while (x != ")") {
+			while (x != ')') {
 				prefixExp[j] = x;
 				j++;
 				x = pop();
@@ -95,6 +95,7 @@ void infixToPrefix(char infixExp[], char prefixExp[]) {
 		i++;
 		item = infixExp[i];
 	}
+	prefixExp[i] = '\0';
 }
 
 void main() {

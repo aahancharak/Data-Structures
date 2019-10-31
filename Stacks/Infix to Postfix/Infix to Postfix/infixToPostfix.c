@@ -30,7 +30,7 @@ char pop() {
 }
 
 int isOperator(char symbol) {
-	if (symbol == "^" || symbol == "*" || symbol == "/" || symbol == "+" || symbol == "-") {
+	if (symbol == '^' || symbol == '*' || symbol == '/' || symbol == '+' || symbol == '-') {
 		return 1;
 	}
 	else {
@@ -38,13 +38,13 @@ int isOperator(char symbol) {
 	}
 }
 int priority(char operator) {
-	if (operator=="^") {
+	if (operator=='^') {
 		return(3);
 	}
-	else if (operator =="/" || operator =="*") {
+	else if (operator =='/' || operator =='*') {
 		return(2);
 	}
-	else if (operator=="+" || operator=="-") {
+	else if (operator=='+' || operator=='-') {
 		return(1);
 	}
 	else
@@ -54,11 +54,11 @@ void  infixToPostfix(char infixExp[], char postfixExp[]) {
 	int i = 0;
 	int j = 0;
 	char x;
-	push("(");
+	push('(');
 	strcat(infixExp, ")");
 	char item = infixExp[0];
-	while (item != "/0") {
-		if (item == "(") {
+	while (item != '/0') {
+		if (item == '(') {
 			push(item);
 		}
 		else if (isdigit(item) || isalpha(item)) {
@@ -76,9 +76,9 @@ void  infixToPostfix(char infixExp[], char postfixExp[]) {
 			push(x);
 			push(item);
 		}
-		else if (item == ")") {
+		else if (item == ')') {
 			x = pop();
-			while (x != "(") {
+			while (x != '(') {
 				postfixExp[j] = x;
 				j++;
 				x = pop();
@@ -97,7 +97,7 @@ void  infixToPostfix(char infixExp[], char postfixExp[]) {
 	if (top < 0 ||top>=SIZE) {
 		printf("\nInvalid infix expression");
  }
-	postfixExp[j] = "/0";
+	postfixExp[j] = '/0';
 }
 
 int main() {
