@@ -1,5 +1,8 @@
 # Data-Structures-Assignment
-Personal repository for data structures and the assignments completed in the course.
+
+### Public repository for data structures and the assignments completed in the course.
+
+### Feel free to implement various algorithms you all know about
 
 **To open the file follow these steps ->**
 
