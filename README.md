@@ -14,4 +14,14 @@
 
 #### This was created in visual studio so if you want to contribute it will be advisable to use visual studio 
 
+### Moreover you can add algo in any of the following languages as I know only about them ->
+
+- [C](https://en.wikipedia.org/wiki/C_(programming_language))
+
+- [Python](https://en.wikipedia.org/wiki/Python_(programming_language))
+
+- [Javascript](https://en.wikipedia.org/wiki/JavaScript)
+
+- [Java](https://www.java.com/)
+
 ##### Happy coding✌
