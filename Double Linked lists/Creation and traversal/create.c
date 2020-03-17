@@ -41,6 +41,7 @@ void create(int n){
 void display(){
   struct node*temp;
   if(head==NULL){
+
     printf("No linked list could be created\n");
     
   }
