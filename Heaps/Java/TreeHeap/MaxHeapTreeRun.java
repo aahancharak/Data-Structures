@@ -3,8 +3,6 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 
-
-
 //this will be the node
 class Node{
     int val;
@@ -22,7 +20,12 @@ class MaxHeap{
    MaxHeap(){
      this.root=null;
    }
-   //print level order
+   //return the maximum element
+   int getMax() throws IllegalArgumentException{
+       if(root==null) throw new IllegalArgumentException("Root not initialized");
+       return root.val;
+   }
+   //print in-order
    void inorder(){
    traverseInOrder(this.root);
    System.out.println();
@@ -105,5 +108,7 @@ public class MaxHeapTreeRun {
          m.insert(arr[i]);
         }
         m.inorder();
+        int data=m.getMax();
+        System.out.println("The maximum element is "+data);
     }
 }
