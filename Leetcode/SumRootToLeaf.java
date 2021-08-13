@@ -1,7 +1,17 @@
-
+package Leetcode;
 //worst case time complexity will be
 // O(height*height) one height to traverse whole tree other for looping through the elements in list to get sum of current path.
 import java.util.ArrayList;
+class TreeNode{
+TreeNode left;
+TreeNode right;
+int val;
+    TreeNode(int val){
+        this.val=val;
+        this.left=null;
+        this.right=null;
+    }
+}
 class Solution {
  //This array list will store final sum values
 /*

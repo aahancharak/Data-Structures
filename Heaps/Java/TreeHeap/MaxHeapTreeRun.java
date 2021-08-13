@@ -1,4 +1,4 @@
-package TreeHeap;
+package Heaps.Java.TreeHeap;
 import java.util.ArrayDeque;
 import java.util.Deque;
 

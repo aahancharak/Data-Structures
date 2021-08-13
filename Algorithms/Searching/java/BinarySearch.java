@@ -1,7 +1,8 @@
+package Algorithms.Searching.java;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.IOException;
-import java.math.*;
+
 class Binary{
     static boolean search(int[] arr,int ele,int low,int high){
         int mid=(int)Math.floor((low+high)/2);
