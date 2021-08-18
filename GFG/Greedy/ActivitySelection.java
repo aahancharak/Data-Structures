@@ -1,4 +1,4 @@
-package Greedy;
+package GFG.Greedy;
 import java.util.*;
 
 class ArrayIndexComparator implements Comparator<Integer>{
