@@ -1,4 +1,4 @@
-package Graphs;
+package Graphs.BFS;
 import java.util.ArrayDeque;
 import java.util.ArrayList;
 class Graph{
