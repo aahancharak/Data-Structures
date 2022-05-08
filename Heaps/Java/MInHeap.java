@@ -26,6 +26,12 @@ class Mheap{
             System.out.println("Maximum heap size reached\n");
             return;
         }
+        //insert heap at the end of the array
+        length++;
+        heap[length-1]=number;
+
+        //siftup until min heap property is not satisfied
+        
     }
     //getMin O(1)
     int getMin() throws Exception{
